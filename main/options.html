@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support For U</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bytesized&family=Cal+Sans&family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/font.css">
+    <link rel="stylesheet" href="/assets/css/options.css">
+
+</head>
+<body class="poppins-regular">
+
+    <div class="section-1" style="color: white;">
+            <h1 class="title"><span style="color: #cf0e5f; margin-right: 10px;">Hai!,</span><span id="nameDisplay"></span></h1>
+            <p class="title" style="margin-top: -20px; font-size: 15px;">Pilih salah satu di bawah ini?</p>
+            <img src="/assets/image/options/1.gif" alt="robot" width="200" style="margin-top: 20px;">
+
+            <div style="display: flex; width: 100%; margin-top: 20px; justify-content: center;">
+                <a href="/main/play.html" class="poppins-semibold" style="background-color: #cf0e5f; color: white; border-radius: 10px; padding: 10px; margin-right: 10px; transition: all 0.2s ease-in-out; text-decoration: none;" onmouseover="this.style.backgroundColor='#d73d5f'" onmouseout="this.style.backgroundColor='#cf0e5f'">
+                    <i class="fas fa-play" style="margin-right: 5px;"></i> Mulai
+                </a>
+                <a href="/main/rate.html" class="poppins-semibold" style="background-color: #cf0e5f; color: white; border-radius: 10px; padding: 10px; margin-left: 10px; transition: all 0.2s ease-in-out; text-decoration: none;" onmouseover="this.style.backgroundColor='#d73d5f'" onmouseout="this.style.backgroundColor='#cf0e5f'">
+                    <img src="/assets/image/icon/flower.svg" width="14" alt="flower icon" style="margin-right: 5px;"> For U <3
+                </a>
+            </div>
+    </div>
+
+<script src="/assets/js/input-name.js"></script>
+<script>
+    const storedName = localStorage.getItem("storedName");
+    document.getElementById("nameDisplay").textContent = storedName;
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(to right, #ffe0f0, #ffb6d9);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nameForm {
+        background-color: #fff0f5;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(255, 105, 180, 0.2);
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
+        border: 2px solid #ffc0cb;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #d63384;
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        border: 1px solid #ffa6c9;
+        outline: none;
+        transition: 0.3s ease;
+        font-size: 1rem;
+        background-color: #fff;
+        margin-bottom: 1rem;
+    }
+
+    input[type="text"]:focus {
+        border-color: #ff69b4;
+        box-shadow: 0 0 5px rgba(255, 105, 180, 0.4);
+    }
+
+    button {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #ff69b4;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+        background-color: #ff1493;
+        transform: scale(1.03);
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 480px) {
+        #nameForm {
+            padding: 1.5rem;
+        }
+
+        label, input, button {
+            font-size: 0.95rem;
+        }
+
+        button {
+            padding: 0.65rem;
+        }
+    }

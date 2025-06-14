@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support For U</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bytesized&family=Cal+Sans&family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/font.css">
+    <link rel="stylesheet" href="/assets/css/play.css">
+
+</head>
+<body class="poppins-regular">
+
+    <div class="section-1" style="color: rgb(0, 0, 0);">
+        <img src="/assets/image/play/1.gif" alt="robot" width="200" style="margin-top: 20px;">
+        mau  denger yapping gw ga ??<span id="nameDisplay"></span>
+        <div style="display: flex; gap: 10px; justify-content: center; margin-top: 20px;">
+            <a href="/main/yapping/yapping.html" class="ya" style="background-color: yellow; border-radius: 10px; padding: 10px; text-decoration: none;">Mau dong</a>
+            <a href="/main/options.html" class="tidak" style="background-color: red; border-radius: 10px; padding: 10px; text-decoration: none;">Gamau</a>
+        </div>
+    </div>
+
+<script src="/assets/js/input-name.js"></script>
+<script>
+    const storedName = localStorage.getItem("storedName");
+    document.getElementById("nameDisplay").textContent = storedName;
+</script>
+</body>
+</html>
